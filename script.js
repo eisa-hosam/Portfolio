@@ -1,3 +1,20 @@
+// يحسب طول الناف بار الحقيقي (بيختلف حسب حجم الشاشة) ويحدّثه كمتغيّر CSS
+// عشان الصورة والمحتوى في الـ hero ميدخلوش تحت الناف أبدًا
+function updateNavHeight() {
+  const nav = document.querySelector("nav");
+  if (nav) {
+    document.documentElement.style.setProperty(
+      "--nav-h",
+      nav.offsetHeight + "px"
+    );
+  }
+}
+
+updateNavHeight();
+window.addEventListener("resize", updateNavHeight);
+window.addEventListener("load", updateNavHeight);
+
+
 particlesJS("particles-js", {
   particles: {
     number: {
