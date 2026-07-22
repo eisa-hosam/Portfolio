@@ -238,6 +238,51 @@ section{
     border-radius:30px;
 }
 
+/* AWARDS */
+.awards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+.award{
+    background:#0f172a;
+    padding:35px;
+    border-radius:20px;
+    text-align:center;
+    transition:.5s;
+}
+
+.award:hover{
+    transform:translateY(-15px);
+    box-shadow:0 0 30px rgba(59,130,246,.5);
+}
+
+.award i{
+    font-size:50px;
+    color:#3b82f6;
+    margin-bottom:20px;
+}
+
+.award h3{
+    margin-bottom:10px;
+}
+
+.award p{
+    color:#d1d5db;
+    line-height:1.8;
+}
+
+.award a{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 30px;
+    background:#3b82f6;
+    color:#fff;
+    text-decoration:none;
+    border-radius:30px;
+}
+
 /* CONTACT */
 .contact-info{
     text-align:center;
